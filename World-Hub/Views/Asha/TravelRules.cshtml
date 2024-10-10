@@ -1,0 +1,171 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Rules";
+    Layout = "_AshaLayout.cshtml";
+}
+
+@* Basic travel rules. Explains the MP system *@
+<h1>Rules of Hex Travel</h1>
+<p>While I'll largely worry about how this stuff works and don't expect players to commit any of this to memory, I wanted to provide an explanation of how hex travel is being decided. My goal is to create rules that are fun, easy to track, and challenging without being frustrating, so please let me know if you find anything you don't like! Naturally we can change any rules that end up not being as fun in practice as they look on paper as well.</p>
+<p>Using both <a href="https://www.5esrd.com/gamemastering/travel-camping-resting-variant-rules/">D&D 5e's</a> and <a href="https://2e.aonprd.com/Rules.aspx?ID=2441&Redirected=1">Pathfinder 2e's travel rules</a> as guidance, I've converted any mention of miles into hex form. At its base each hex represents 6 miles, which means your average adventurer travels 4 hexes in a day across flat terrain.</p>
+
+<p>To avoid having to do a bunch of math every time the party moves, I'm giving adventurers movement points (MP) to use:</p>
+<ul>
+    <li>Each day, your average adventurer recovers 4 MP.
+        <ul>
+            <li>MP is determined by MP Recovery(MPR). The math for this is Speed / 10 + 1", meaning a walking speed of 30 equals 4 MPR. A walking speed of 20 equals 3 MPR.</li>
+            <li>Speed always rounds to the nearest 10, so a speed of 25 equals 4 MPR.</li>
+        </ul>
+    </li>
+    <li>The average adventurer has 6 Max MP (MMP), which is meant to give leftover MP a use.
+        <ul>
+            <li>MMP = MPR / 2 + MPR.</li>
+        </ul>
+    </li>
+    <li>Some actions may provide Temporary MP. Temporary MP bypasses MMP, making it possible to temporarily have 7 MP with 6 MMP.</li>
+    <li>It may be possible to end up with 0.5 MP. This would round and be added to MPR for the next adventuring day.</li>
+</ul>
+<p><b>Travel Pace: </b>At the beginning of an adventuring day, players can choose to travel at a <b>fast pace</b> to for +1 Temporary MP at the cost of taking disadvantage on perception, survival, and stealth checks. Players can also travel at a <b>slow pace</b> at the cost of losing 1 MP, but this will provide advantage on perception, survival, and stealth checks.</p>
+
+<p><b>Vision: </b>While traveling, an adventurer has vision of bordering hexes. If they can find high ground, such as by climbing a tall tree, they can extend their vision by a further 1 hex.</p>
+
+@* Terrain difficulty.  *@
+<h1>Terrain Difficulty</h1>
+<p>Within the hex map, each hex represents a biome. While different biomes come with their own considerations, a notable thing affected by this is terrain difficulty. This determines how much MP it costs to move out of a the hex, so it may be better to avoid certain hexes if your goal is to move quickly.</p>
+<p>Please note that <b>cost is for moving out of a hex</b>. This means it costs 1 point to move from a grassland hex onto a mountain hex and 4 points to move from a mountain hex onto a grassland hex.</p>
+
+
+<h2>Normal Terrain</h2>
+<p>It costs 1 point to exit the hex. Grasslands, less dense forests, and flat tundras are an example of this type of terrain.</p>
+
+<h2>Difficult Terrain</h2>
+<p>It costs 2 points to exit the hex. Swamps, dense jungles, and rocky mesas are but a few examples of difficult terrain. Each type of difficult terrain tends to come with its own unique challenges.</p>
+
+<h2>Treacherous Terrain</h2>
+<p>It costs 4 points to exit the hex. This usually refers to mountains, which have some special things to consider:</p>
+    <ul>
+        <li>An adventurer must succeed on a DC10 acrobatics or athletics skill check to pass through unharmed.
+            <ul>
+                <li>If moving at a fast pace, they make this roll at disadvantage.</li>
+                <li>If moving at a slow pace, they may skip this check.</li>
+            </ul>
+        </li>
+        <li>For hex map travel, a climbing kit doesn't hinder speed.</li>
+    </ul>
+<br>
+
+@* Landscapre features *@
+<h1>Landscape Features</h1>
+<p>In addition to terrain difficulty, certain hexes may contain landscape features. These may change the terrain difficulty, act as a barrier, or come with other special considerations.</p>
+
+<h2>Paths</h2>
+<p>If there is a path leading through a difficult or treacherous hex, then this hex gets downgraded in difficulty. How much it gets downgraded varies. On normal terrain, paths just indicate roads commonly traveled.</p>
+
+<h2>Rapid Flowing Rivers</h2>
+<p>Trying to cross a rapid flowing river can prove deadly to an unprepared adventurer. They can swim across by succeeding an athletics check (normally DC15), but might be able to get across with an easier skill check if they have the means to do so. If they are wearing heavy armor, they take disadvantage on the roll to swim.</p>
+@* <p>Although river rapids by themselves are unlikely to kill an unprepared adventurer, they can still prove to be a hazard. </p> *@
+<p><b>Failing the check: </b>If they fail the DC15 athletics check, they will take 1d4 damage, a point of exhaustion, and are washed a hex down river. They must make the check again and succeed in order to escape the rapids.</p>
+
+<h2>Cliffs and other great heights</h2>
+<p>Sometimes an adventurer may find their path blocked by great height. I'm planning to use whatever rules the system I'm using uses, so I'll link to those for ease of access.</p>
+<ul>
+    <li>PF2e: <ul>
+            <li><a href="https://2e.aonprd.com/Rules.aspx?ID=2352&Redirected=1">Fall damage rules</a></li>
+            <li><a href="https://2e.aonprd.com/Actions.aspx?ID=2298&Redirected=1">Jumping (leaping) rules</a></li>
+            <li><a href="https://2e.aonprd.com/Actions.aspx?ID=2374&Redirected=1">Climbing rules</a></li>
+    </ul></li>
+</ul>
+<br>
+
+<h2>Other Features</h2>
+<p>This section is only meant to cover common landscape features that your average adventurer would be familiar with., so there are bound to be landscape features not covered here. If it's not listed here and you're unsure what a landscape feature does, I'll probably have you roll to see if you understand how it works.</p>
+
+<h1>Getting Lost</h1>
+<p>When venturing off well-trodden paths, it's inevitable that an adventurer will eventually get lost and have to find their way. When this happens, the GM will hide the map, describe their surroundings, and decide where they end up given the information provided.</p>
+<p>Whether an adventurer gets lost or not is usually determined by a survival check rolled at the beginning of an adventuring day, but for hexes like dense forest, the GM may have you roll for every hex. The difficulty of this check depends on the hex the day is starting on. Because only one person makes the check, adventuring parties will often designate someone to act as a guide; however, another adventurer can still attempt to assist their guide by using <a href="https://2e.aonprd.com/Actions.aspx?ID=2292&Redirected=1">the aid action</a>.</p>
+<h2>Getting Unlost</h2>
+<p>While getting lost can prove to be a nuisance, there are thankfully plenty of ways for an adventurer to find their bearings.</p>
+<p>If the lost adventurer can <b>find a good vantage point on some high ground</b>, they might be able to make another survival check to get their course back on track.</p>
+<p>Alternatively, if a lost adventurer were to <b>find a landmark</b>, they might be able to roll nature or lore to figure out where they are. If it's in a location the adventurer is familiar with or if the landmark is famous, <a href="https://2e.aonprd.com/Rules.aspx?ID=508"> the adventurer will receive a circumstance bonus</a>  determined by the GM.</p>
+
+@* Vehicles and mounts *@
+<h1>Vehicles & Mounts</h1>
+<p>Unless otherwise stated, a vehicle will replace an adventurer's normal MP instead of adding or subtracting from it. MP is determined by Speed / 10 + 1. If a vehicle's speed isn't divisible by 10, round speed to the nearest 10. Max MP is MP / 2 + MP.</p>
+
+<h2>Mountaing & Dismounting</h2>
+<p>For the sake of mounting and dismounting, a bit of math unfortunately seems unavoidable.</p>
+<p>Overall, this is calculated by dividing the entity with the lower MP Recovery (MPR) by the entity with the higher MPR and then multiplying the resulting decimal by  to determine how much MP is reasonably remaining. For example, an adventurer who rides three hexes across flat terrain on a horse and then dismounts can move another 2 hexes on foot.</p>
+<p><b>Math formula: </b> Lower_MPR / Higher_MPR * Hexes_Moved</p>
+
+<h2>Mounts</h2>
+<p>Like any other living creature, a mount needs to be fed and cared for. Like an adventurer, a mount can move at a fast or slow pace.</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>MPR</th>
+            <th>MMP</th>
+            <th>Considerations</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Riding Horse</td>
+            <td>6</td>
+            <td>9</td>
+            <td>
+                <ul>
+                    <li>Horses struggle with exiting mountains, swamps, and some other hexes.
+                        <ul>
+                            <li>MP Recovery is lowered to 4. Max MP is lowered to 6.</li>
+                            <li>Skill checks get +5 to difficulty.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+    <thead></thead>
+</table>
+
+<h2>Ships</h2>
+<p>Unless otherwise stated, ships are only usable in water of an appropriate size.</p>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>MPR</th>
+            <th>MMP</th>
+            <th>Considerations</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Galley</td>
+            <td>4</td>
+            <td>6</td>
+            <td>
+                <ul>
+                    <li>
+                        Only usable in water.
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Sailing Ship</td>
+            <td>5</td>
+            <td>8</td>
+            <td>
+                <ul>
+                    <li>
+                        Only usable in water.
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>

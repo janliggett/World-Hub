@@ -1,0 +1,27 @@
+﻿/* Navbar */
+.navbar ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding-left: 0;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a {
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+}
+
+.homepage {
+    float: left;
+    margin-right: 30px;
+    display: block;
+
+}

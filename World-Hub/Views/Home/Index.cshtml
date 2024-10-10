@@ -1,0 +1,24 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    ViewData["Title"] = "World Hub";
+}
+
+@* Eventually I think I'd like to get these worlds setup as clickable cards. *@
+<div>
+    <h1>The World Hub</h1>
+    <p>Filler text.</p>
+    <h2>TTRPG Worlds</h2>
+    <p>Any worlds created with TTRPG's in mind. If you're playing in a campaign I'm running, then this is probably the section you're interested in.</p>
+    <button onclick="Duplicate()">Test World Display</button>
+    <div id="worlds">
+        <a class="world" id="testEle" asp-controller="Asha">
+            <div>Asha</div>
+        </a>
+        <a class="world" asp-controller="Home">Test 2</a>
+    </div>
+    <h2>Story Worlds</h2>
+    <p>Worlds from any stories I've written, whether they are branching or more like a typical a novel.</p>
+</div>

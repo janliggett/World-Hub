@@ -1,0 +1,86 @@
+﻿
+/* Navbar Tweaks */
+
+/*@import url('worldhub.css');*/
+:root {
+    --blue: #190735;
+    --purple: #3F0D4C;
+    --pink: #C874B2;
+    --lightPink: #F5D5E0;
+    --almostWhite: #F4DEDE;
+    --charcoal: #3B4356;
+    --charcoal-opaque: rgb(59, 67, 86, 0.7);
+}
+
+.navbar {
+    background-color: var(--purple);
+    
+}
+
+.navbar a {
+    color: var(--almostWhite);
+}
+
+.navbar a:hover {
+    background-color: var(--blue);
+    color: var(--pink);
+}
+
+/* */
+
+html, body {
+    height: 100%;
+/*    display: flex;*/
+}
+
+body {
+    background-image: url('../Images/Starfields/Starfield 1 - 512x512.png');
+    color: var(--almostWhite);
+}
+
+.pageLayout {
+    background-color: var(--charcoal-opaque);
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border: 6px solid;
+    border-top: none;
+    border-bottom: none;
+    height: 89.6%;
+}
+
+a {
+    color: white;
+}
+
+#worlds {
+    display: flex;
+/*    padding: 20px;*/
+}
+
+.world {
+    margin-right: 20px;
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    line-height: 196px;
+    border-radius: 50%;
+    text-align: center;
+    /*    align-items: end;*/
+    /*    vertical-align: bottom;*/
+}
+
+.world div {
+    opacity: 78%;
+    background-color: red;
+/*    height: 10px;*/
+}
+
+/* Footer */
+footer {
+    background-color: var(--charcoal);
+    border-top: 4px solid var(--almostWhite);
+    padding: 18px;
+    /*    display: inline;*/
+}
