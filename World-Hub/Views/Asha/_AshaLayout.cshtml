@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/css/CssReset.css" asp-append-version="true" />
-     <link rel="stylesheet" href="~/css/Navbar.css" asp-append-version="true" />
+     <link rel="stylesheet" href="~/css/PageSetup.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/Asha.css" asp-append-version="true" />
 </head>
 <body>
@@ -25,7 +25,10 @@
                         <a asp-area="" asp-controller="Asha" asp-action="World">World</a>
                     </li>
                     <li>
-                        <a asp-area="" asp-controller="Asha" asp-action="Religions">Religions</a>
+                        <a asp-area="" asp-controller="Asha" asp-action="Deities">Deities</a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Asha" asp-action="Groups">Groups</a>
                     </li>
                     <li>
                         <a asp-area="" asp-controller="Asha" asp-action="Chargen">Character Creation</a>
@@ -42,7 +45,7 @@
             @RenderBody()
         </main>
     </div>
-    <footer class="border-top footer text-muted">
+    <footer>
 
         <div class="container">
             &copy; 2024 - Jan Liggett - <a asp-area="" asp-controller="Home" asp-action="About">About</a>

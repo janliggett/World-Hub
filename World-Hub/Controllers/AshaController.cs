@@ -14,7 +14,7 @@ namespace WorldHub.Controllers
         {
             return View();
         }
-        public IActionResult Religions()
+        public IActionResult Deities()
         {
             return View();
         }
@@ -31,6 +31,10 @@ namespace WorldHub.Controllers
             return View();
         }
         public IActionResult TravelRules() { 
+            return View();
+        }
+        public IActionResult Groups()
+        {
             return View();
         }
     }

@@ -1,8 +1,4 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-
-@{
+﻿@{
     ViewData["Title"] = "World Hub";
 }
 
@@ -12,12 +8,16 @@
     <p>Filler text.</p>
     <h2>TTRPG Worlds</h2>
     <p>Any worlds created with TTRPG's in mind. If you're playing in a campaign I'm running, then this is probably the section you're interested in.</p>
-    <button onclick="Duplicate()">Test World Display</button>
+    @* <button onclick="Duplicate()">Test World Display</button> *@
     <div id="worlds">
-        <a class="world" id="testEle" asp-controller="Asha">
-            <div>Asha</div>
-        </a>
-        <a class="world" asp-controller="Home">Test 2</a>
+        <div class="worldContainer">
+            <a class="world" asp-controller="Asha">
+                <img src="~/Images/Maps/Asha - Middle Sea Nations.jpg" alt="Globe of Asha"/>
+            </a>
+            <a class="banner" asp-controller="Asha">Asha</a>
+        </div>
+        
+        @* <a class="world" asp-controller="Home">Test 2</a> *@
     </div>
     <h2>Story Worlds</h2>
     <p>Worlds from any stories I've written, whether they are branching or more like a typical a novel.</p>
