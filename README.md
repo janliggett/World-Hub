@@ -11,7 +11,7 @@ I believe these problems are mostly fixed and as someone who enjoys C#, I'm enjo
 ## Technical Goals for the Site
 While this website is currently just documentation for my players, I do have some longer term goals for the website:
 
-[ ] User logins with assigned roles. I believe this would need to be tied to a SQL database.
-[ ] Web applications, such as character builders. This would come after the database so that people can save their work.
+- [ ] User logins with assigned roles. I believe this would need to be tied to a SQL database.
+- [ ] Web applications, such as character builders. This would come after the database so that people can save their work.
 
 Overall, these are very much "long term goals" that probably won't be implemented soon. Part of that is simply because adding a database will likely mean so I can no longer host the website for free, but this stuff is certainly on my radar.
