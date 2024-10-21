@@ -10,6 +10,31 @@ namespace WorldHub.Controllers
         {
             return View();
         }
+
+        public IActionResult CEU() {
+            return View("Seishun/CEU");
+        }
+        public IActionResult Kalshan()
+        {
+            return View();
+        }
+        public IActionResult Vindral()
+        {
+            return View();
+        }
+
+        public IActionResult SeishuneseWest() {
+            return View();
+        }
+        public IActionResult DrechenExpanse()
+        {
+            return View();
+        }
+        public IActionResult AkalushanNorth()
+        {
+            return View();
+        }
+
         public IActionResult World()
         {
             return View();
@@ -26,14 +51,15 @@ namespace WorldHub.Controllers
         {
             return View();
         }
-        public IActionResult Attegan()
-        {
-            return View();
-        }
         public IActionResult TravelRules() { 
             return View();
         }
         public IActionResult Groups()
+        {
+            return View();
+        }
+
+        public IActionResult Attegan()
         {
             return View();
         }

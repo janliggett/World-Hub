@@ -1,6 +1,8 @@
 #Excluded folders
-World-Hub/bin/Debug/net8.0/*
-World-Hub/obj/Debug/net8.0/*
+World-Hub/bin/*
+# World-Hub/bin/Debug/net8.0/*
+World-Hub/obj/Debug/*
+World-Hub/obj/Release/*
 
 # Editor directories and files
 .vs
