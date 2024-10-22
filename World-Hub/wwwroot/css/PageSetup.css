@@ -1,5 +1,5 @@
 ﻿html {
-    overflow: auto;
+    /*overflow: auto;*/
     font-family: Arial, sans-serif;
     font-size: 1.15em;
 }
@@ -20,6 +20,7 @@ header {
     grid-column: 1 / 1;
     grid-row: 2 / 3;
     height: 100%;
+    width: 85vw;
 }
 
 footer {

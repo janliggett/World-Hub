@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "The CEU";
+    Layout = "_AshaLayout.cshtml";
+}
+
+<h1>Character Creation</h1>
+<p>While creating a character, you'll basically need to do the following:</p>
+<ul>
+    <li>If you haven&rsquo;t already, get an invite from me to join the campaign on forge.</li>
+    <li>Keep the setting in mind and try to create a character that fits. <a asp-area="" asp-controller="Asha" asp-action="Chargen">The available options have been summarized here</a>, while the rest of the website attempts to provide common information your characters may know.</li>
+    <li>Tell me about your character. We'll want to discuss the character so that I can offer suggestions or at least mark stuff down about them in my notes.</li>
+    <li><a asp-area="" asp-controller="Asha" asp-action="Rules">Read over the rules listed here.</a> I'm mostly playing PF2e by the book, but anything I felt was worth mentioning is there.</li>
+</ul>
+<p>While I&rsquo;ve tried to make as much available in the documentation as I can, naturally there is stuff that isn&rsquo;t included. It&rsquo;s impossible to include everything a player will need to know, because your character&rsquo;s background could make them privy to secret information, you might want to design your home village, or any other number of things.</p>
+<p>So if you have any questions, don&rsquo;t hesitate to ask!</p>
+
+<h2>Starting Equipment</h2>
+<p class="c1">While you can equipment in <a href="#compendiums">compendiums</a> or within the rule books, it's worth noting that players start off at level 1 with 15 gold to spend on equipment. If you'd prefer to automate getting equipment, I'm setting up a "beginner shop" on foundry.</p>
+<p class="c1"><a href="https://2e.aonprd.com/Rules.aspx">You can find PF2E&rsquo;s complete rule set here</a>, but make sure to ask me if you have any questions.</p>
+
+<h2>Handouts</h2>
+
+<ul>
+    <li><a href="~/Handouts/Pathfinder 2e Remaster Actions and Activites Cheat Sheet (Dark Mode)-1.pdf">PF2e Cheat Sheet - Dark Mode</a></li>
+    <li><a href="~/Handouts/Pathfinder 2e Remaster Actions and Activites Cheat Sheet (Light Mode)-1.pdf">PF2e Cheat Sheet - Light Mode</a></li>
+</ul>
+
+<h1>Using Foundry</h1>
+<p>
+    Since at least some of my players aren&rsquo;t going to be very
+    familiar with Foundry as a VTT, I wanted to dedicate part of this guide
+    to using it.
+</p>
+
+<h2>Performance & Accessibility</h2>
+<p>First of all, if you notice any performance issues, please keep in mind that you can adjust settings individually through the settings tab on the far right. Under Configure Settings you&rsquo;ll find &ldquo;Performance Mode,&rdquo; along with accessibility settings and other things you might want to tweak.</p>
+
+<img src="~/Images/Snippets/accessibility.png">
+
+<h2><span id="compendiums">Compendiums</span></h2>
+<p>Just to the left of the settings tab, you&rsquo;re going to find compendiums. Basically anything you need to create a character should be in a compendium, which means you&rsquo;ll just need to drag and drop most of what you need from a compendium onto your character sheet. I&rsquo;d largely prefer to add stuff via compendiums, simply because it&rsquo;s easier and ensures stuff plays nicely.</p>
+<p>When looking at things like feats specifically, I'd recommend checking out the Compendium Browser at the bottom. Pathfinder 2e seems to have a lot of feats and the compendium browser makes it easier to filter out stuff you don&rsquo;t want to see.</p>
+<img src="~/Images/Snippets/compendiumBrowser.png" />
+
+<p>As a final note, I&rsquo;d like to bring your attention to the &ldquo;PF2E Workbench&rdquo; folder in the Compendiums tab under the macros folder. PF2E Workbench is a module that adds scripts and while a lot of these aren&rsquo;t going to be relevant to players, I do think the &ldquo;Basic Action Macros&rdquo; script is worth giving a look. Running this script will bring up a list of common actions, which might prove more intuitive than using the character sheet.</p>
+<img src="~/Images/Snippets/basicActionMacro.png" />

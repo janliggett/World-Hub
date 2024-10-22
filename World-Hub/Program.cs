@@ -17,11 +17,25 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-//app.MapGet("/", () => "Arr matey, this be a test!");
+app.UseAuthorization();
 
+// Implemented areas per: https://learn.microsoft.com/en-us/aspnet/core/mvc/controllers/routing?view=aspnetcore-8.0#areas
+app.MapControllerRoute(
+    "Asha", "Places/{controller}/{id?}",
+    defaults: new { area = "Places" }, constraints: new { area = "Places" }
+);
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}"
 );
 
+//app.UseEndpoints(endpoints =>
+//{
+//    endpoints.MapControllerRoute(
+//    name: "default",
+//    pattern: "{controller=Home}/{action=Index}/{id?}"
+
+//});
+
 app.Run();
+

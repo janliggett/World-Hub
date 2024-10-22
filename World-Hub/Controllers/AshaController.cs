@@ -3,16 +3,13 @@ using System.Text.Encodings.Web;
 
 namespace WorldHub.Controllers
 {
+    //[Area("Places")]
     public class AshaController : Controller
     {
-        //public IActionResult Index()
-        public IActionResult Index()
+        public IActionResult CEU()
         {
+            //return View("~/Views/Asha/Places/CEU.cshtml");
             return View();
-        }
-
-        public IActionResult CEU() {
-            return View("Seishun/CEU");
         }
         public IActionResult Kalshan()
         {
@@ -23,7 +20,8 @@ namespace WorldHub.Controllers
             return View();
         }
 
-        public IActionResult SeishuneseWest() {
+        public IActionResult SeishuneseWest()
+        {
             return View();
         }
         public IActionResult DrechenExpanse()
@@ -35,6 +33,11 @@ namespace WorldHub.Controllers
             return View();
         }
 
+
+        public IActionResult Index()
+        {
+            return View();
+        }
         public IActionResult World()
         {
             return View();
@@ -43,7 +46,7 @@ namespace WorldHub.Controllers
         {
             return View();
         }
-        public IActionResult Rules5e()
+        public IActionResult Rules()
         {
             return View();
         }
@@ -56,6 +59,9 @@ namespace WorldHub.Controllers
         }
         public IActionResult Groups()
         {
+            return View();
+        }
+        public IActionResult Guide() {
             return View();
         }
 

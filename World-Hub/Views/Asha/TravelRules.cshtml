@@ -9,11 +9,11 @@
 @* Basic travel rules. Explains the MP system *@
 <h1>Rules of Hex Travel</h1>
 <p>While I'll largely worry about how this stuff works and don't expect players to commit any of this to memory, I wanted to provide an explanation of how hex travel is being decided. My goal is to create rules that are fun, easy to track, and challenging without being frustrating, so please let me know if you find anything you don't like! Naturally we can change any rules that end up not being as fun in practice as they look on paper as well.</p>
-<p>Using both <a href="https://www.5esrd.com/gamemastering/travel-camping-resting-variant-rules/">D&D 5e's</a> and <a href="https://2e.aonprd.com/Rules.aspx?ID=2441&Redirected=1">Pathfinder 2e's travel rules</a> as guidance, I've converted any mention of miles into hex form. At its base each hex represents 6 miles, which means your average adventurer travels 4 hexes in a day across flat terrain.</p>
+<p>With <a href="https://2e.aonprd.com/Rules.aspx?ID=2441&Redirected=1">Pathfinder 2e's travel rules</a> as guidance, I've converted any mention of miles into hex form. At its base each hex represents 6 miles, which means your average adventurer travels 4 hexes in a day across flat terrain.</p>
 
 <p>To avoid having to do a bunch of math every time the party moves, I'm giving adventurers movement points (MP) to use:</p>
 <ul>
-    <li>Each day, your average adventurer recovers 4 MP.
+    <li>After 8 hours of rest, your average adventurer recovers 4 MP.
         <ul>
             <li>MP is determined by MP Recovery(MPR). The math for this is Speed / 10 + 1", meaning a walking speed of 30 equals 4 MPR. A walking speed of 20 equals 3 MPR.</li>
             <li>Speed always rounds to the nearest 10, so a speed of 25 equals 4 MPR.</li>
@@ -32,36 +32,35 @@
 <p><b>Vision: </b>While traveling, an adventurer has vision of bordering hexes. If they can find high ground, such as by climbing a tall tree, they can extend their vision by a further 1 hex.</p>
 
 @* Terrain difficulty.  *@
-<h1>Terrain Difficulty</h1>
-<p>Within the hex map, each hex represents a biome. While different biomes come with their own considerations, a notable thing affected by this is terrain difficulty. This determines how much MP it costs to move out of a the hex, so it may be better to avoid certain hexes if your goal is to move quickly.</p>
-<p>Please note that <b>cost is for moving out of a hex</b>. This means it costs 1 point to move from a grassland hex onto a mountain hex and 4 points to move from a mountain hex onto a grassland hex.</p>
+<h1>Hex Difficulty</h1>
+<p>Within the hex map, each hex represents a biome. While different biomes come with their own considerations, a notable thing affected by this is how challenging it is to travel across a hex. This determines how much MP it costs to move onto a the hex, so it may be better to avoid certain hexes if your goal is to move quickly.</p>
+<p>Please note that <b>cost is for moving onto a hex</b>. This means it costs 4 MP to move from a grassland hex onto a mountain hex and 1 MP to move from a mountain hex onto a grassland hex.</p>
 
 
-<h2>Normal Terrain</h2>
-<p>It costs 1 point to exit the hex. Grasslands, less dense forests, and flat tundras are an example of this type of terrain.</p>
+<h2>Normal Hex</h2>
+<p>It costs 1 point to enter the hex. Grasslands, less dense forests, and flat tundras are an example of this type of terrain.</p>
 
-<h2>Difficult Terrain</h2>
-<p>It costs 2 points to exit the hex. Swamps, dense jungles, and rocky mesas are but a few examples of difficult terrain. Each type of difficult terrain tends to come with its own unique challenges.</p>
+<h2>Challenging Hex</h2>
+<p>It costs 2 points to enter the hex. Hills, swamps, and dense jungles are but a few examples of a challenging hex. It's generally assumed that an adventurer tires more easily and must take more regular breaks.</p>
 
-<h2>Treacherous Terrain</h2>
-<p>It costs 4 points to exit the hex. This usually refers to mountains, which have some special things to consider:</p>
+<h2>Mountain Hex</h2>
+<p>It costs 4 points to enter the hex. Mountains have some special considerations:</p>
     <ul>
-        <li>An adventurer must succeed on a DC10 acrobatics or athletics skill check to pass through unharmed.
+        <li>An adventurer must succeed on a climbing check to pass through unharmed, which is usually DC15. They might be able to skip this check using spells or other means.
             <ul>
-                <li>If moving at a fast pace, they make this roll at disadvantage.</li>
-                <li>If moving at a slow pace, they may skip this check.</li>
+                <li>If moving at a fast pace, add 5 to the DC.</li>
+                <li>If moving at a slow pace, subtract 5 from the DC.</li>
             </ul>
         </li>
-        <li>For hex map travel, a climbing kit doesn't hinder speed.</li>
     </ul>
 <br>
 
 @* Landscapre features *@
 <h1>Landscape Features</h1>
-<p>In addition to terrain difficulty, certain hexes may contain landscape features. These may change the terrain difficulty, act as a barrier, or come with other special considerations.</p>
+<p>In addition to terrain difficulty, certain hexes may contain landscape features. These may change the hex difficulty, act as a barrier, or come with other special considerations.</p>
 
 <h2>Paths</h2>
-<p>If there is a path leading through a difficult or treacherous hex, then this hex gets downgraded in difficulty. How much it gets downgraded varies. On normal terrain, paths just indicate roads commonly traveled.</p>
+<p>If there is a path leading through a challenging or mountain hex, then this hex gets downgraded in difficulty. How much it gets downgraded varies. On normal terrain, paths just indicate roads commonly traveled.</p>
 
 <h2>Rapid Flowing Rivers</h2>
 <p>Trying to cross a rapid flowing river can prove deadly to an unprepared adventurer. They can swim across by succeeding an athletics check (normally DC15), but might be able to get across with an easier skill check if they have the means to do so. If they are wearing heavy armor, they take disadvantage on the roll to swim.</p>

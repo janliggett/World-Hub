@@ -6,31 +6,30 @@
     Layout = "_AshaLayout.cshtml";
 }
 
-
-<p>For now I've included the rules to come to mind, but this page is liable to change during our session 0. Session 0 is normally where we discuss boundaries and other things that need to be talked about before playing.</p>
-
 <h1>The Hexmap</h1>
-<p>For this campaign, I'm making use of a hex maps for exploration. Instead of trying to keep track of everything in miles, I'm instead rewriting things so that travel is represented in hexes per day.</p>
+<p>For this campaign, I'm making use of hex maps for exploration. Instead of trying to keep track of everything in miles, I'm instead rewriting things so that travel is represented in hexes per day.</p>
 <p>While traveling, you'll want to keep the following in mind:</p>
 <ul>
-    <li>A party of adventurer can explore four hexes in a day.</li>
-    <li> Some hexes take longer to traverse, and may come with special considerations.</li>
-    <li>I'll be populating the map with stuff to find, so don't hesitate to explore!</li>
+    <li>Miles have been replaced by Movement Points (MP).
+        <ul>
+            <li>Most adventurers recover 4 movement points after 8 hours of sleep. They can also recover MP by taking a point of fatigue.</li>
+            <li>An adventurer has Max Movement Points, which for most adventurers is 6.</li>
+        </ul>
+    </li>    
+    <li>Some hexes take longer to traverse, and may come with special considerations.</li>
+    <li class="c1 c6 li-bullet-0">Mounts, landscape features, and other things affect movement.</li>
 </ul>
 <p><a asp-controller="Asha" asp-action="TravelRules">For further details on travel, please click here for a full explanation of travel rules and how this stuff is being calculated.</a></p>
 
-<h2>Further Notes</h2>
-<p>I've also tweaked a few rules and taken a few liberties with my world building that I feel are worth noting.</p>
-<p><b>Goodberry enchants berries</b></p>
-<p>Instead of conjuring berries, Goodberry instead now enchants up to 10 berries. </p>
-<p><b>Common isn't so common</b></p>
-<p>The "Wayfarer's Cant" - commonly known as "Common" - is a language invented by the League of Adventurers to help adventurers easily communicate. Since its creation, it's become far more common to meet an adventurer who knows common than one who doesn't.</p>
-<p>Despite this, your average citizen doesn't know the cant. They tend to know only the local language, which can make it difficult for at times for an adventurer to communicate with the locals.</p>
 
-
-@* <h1>House Rules</h1>
-<p>These are things I'm either changing from base D&D or rules I felt are worth clarifying.</p>
-<p><b>PVP is consensual: </b>If a player attempts to steal from another player, the victim player decides if they're successful. They may choose to ask them to make a sleight of hand check... or they can say they're immediately caught.</p>
-<p><b>Help action requires proficiency: </b>In order to use the help action, you need to have proficiency in that skill.</p>
-<p><b>Stealth rolls are group checks: </b>When multiple people are trying to be stealthy, success is determined by majority. If half or more of the party succeeds, then everyone succeeds.</p> *@
+<h1>Rule Clarifications</h1>
+<p>While I'm largely playing Pathfinder 2e by the book, there are a few things I've either changed or felt were worth mentioning. Any changes to player options <a asp-area="" asp-controller="Asha" asp-action="Chargen">are listed on the character creation page</a>.</p>
+<h2>Encumbrance</h2>
+<p class="c1">Because it'&rsquo;'s really easy to track encumbrance in Foundry so long as items are added via compendiums, I'd like to make use of encumbrance rules. So you'll want to either sell unused equipment or find somewhere to store it.</p>
+<h2>Rations</h2>
+<p class="c1">I'd like to keep track of rations, since I think needing to keep track of food makes travel more interesting.</p>
+<p>While I know a lot of people don't like needing to keep track of rations, I should have a script that allows me to make everyone in the party consume a ration with the click of a button. My hope is that this will make rations into a fun mechanic that doesn't require micro management on the player's end.</p>
+<h2>Less common Common</h2>
+<p>If you&rsquo;ve read about languages, you might have noticed I&rsquo;ve changed Common into a &ldquo;language a lot of people know&rdquo; instead of a language everyone knows.</p>
+<p>My reasoning here is that when it comes to NPC&rsquo;s, I want language to act as a barrier to information if a character is far from home. When it comes to the party though, I want to give the PC&rsquo;s a way to understand each other without needing to change what languages they select. This is why Common has become a bit less common.</p>
 

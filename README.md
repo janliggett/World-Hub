@@ -4,7 +4,7 @@ This is a website for different worlds I've created. Right now you're mostly goi
 I recently deployed it using free azure hosting here: https://worldhub.azurewebsites.net/. This is bound to be a bit behind the GitHub repo.
 
 ## ASP.NET Swap
-A long time ago I had a website that was running solely for the Asha setting and in D&D 5e instead of Pathfinder 2e, so a big part of getting this website up and running has been transferring over the old website and re-working the documentation. Since I was originally using PHP for that website and my skills as a programmer have naturally grown since then, this initially left me with a lot of old problems to fix.
+A long time ago I had a website that was running solely for the Asha setting and in D&D 5e instead of Pathfinder 2e. So a big part of getting this website up and running has been transferring over the old website and re-working the documentation. Since I was originally using PHP for that website and my skills as a programmer have naturally grown since then, this initially left me with a lot of old problems to fix.
 
 These problems have all been fixed and as someone who enjoys C#, I'm enjoying working with ASP.NET a lot.
 

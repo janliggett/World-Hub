@@ -9,7 +9,6 @@
     --golden: #f7ebba;
 }
 
-
 h1 {
     text-decoration: underline;
     text-decoration-color: #8B221E;
@@ -19,13 +18,15 @@ h1 {
 body {
     height: 100vh;
     background-image: url("/Images/dark_embroidery.png");
-    
 }
 
 * {
     box-sizing: border-box;
     
 }
+
+
+
 
 /* Navbar */
 .navbar ul {
@@ -63,10 +64,9 @@ footer {
     border-top-color: var(--bloodRose);
 }
 
-    footer a {
-        /*text-decoration: none;*/
-        color: var(--golden);
-    }
+footer a {
+    color: var(--golden);
+}
 
 /* Main Info Page */
 
@@ -82,7 +82,7 @@ footer {
     background-image: url("/Images/seamless-backgrounds-03-.jpg");
     padding: 30px;
     margin: auto;
-    width: 80vw;
+    
     border-left: 10px double var(--rose);
     border-right: 10px double var(--rose);
     box-shadow: 10px 5px 15px black;
@@ -144,7 +144,6 @@ table li {
     text-decoration: none;
     color: var(--golden);
     text-align: center;
-    /*line-height: 250px;*/
     min-height: 250px;
     max-height: 250px;
     min-width: 180px;
@@ -153,4 +152,14 @@ table li {
     border: 5px solid var(--bloodRose);
     border-radius: 14px;
     font-size: 1.3em;
+}
+
+
+@media screen and (max-width: 660px) {
+    #navbar ul {
+        background-color: blue;
+    }
+    .pageLayout {
+        width: 95%;
+    }
 }

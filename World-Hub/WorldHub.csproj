@@ -8,11 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\Handouts\Pathfinder 2e Remaster Actions and Activites Cheat Sheet %28Dark Mode%29-1.pdf" />
+    <None Include="wwwroot\Handouts\Pathfinder 2e Remaster Actions and Activites Cheat Sheet %28Light Mode%29-1.pdf" />
     <None Include="wwwroot\Images\Attegan.jpg" />
     <None Include="wwwroot\Images\dark_embroidery.png" />
     <None Include="wwwroot\favicon.ico" />
     <None Include="wwwroot\Images\seamless-backgrounds-03-.jpg" />
     <None Include="wwwroot\Images\Maps\WorldMap-Asha.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\" />
+    <Folder Include="Views\Asha\Places\" />
   </ItemGroup>
 
 </Project>
