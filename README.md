@@ -9,7 +9,7 @@ A long time ago I had a website that was running solely for the Asha setting and
 These problems have all been fixed and as someone who enjoys C#, I'm enjoying working with ASP.NET a lot.
 
 ## Readability and Accessibility
-Since the primary goal of this website is to provide documentation for my players, I consider readability and accessibility to be what matters most. I am currently working on making the website easier to navigate, but I'd say my goal after that is to make it mobile friendly. After that I'll tackle accessibility issues as I'm made aware of them. 
+Since the primary goal of this website is to provide documentation for my players, I consider readability and accessibility to be what matters most. It's mlready obile friendly and I've fixed other issues as I've noticed them, but I will continue to fix issues as I'm made aware of them. 
 
 ## Long-term Goals
 While this website is currently just documentation for my players, I do have some longer term goals for the website:
