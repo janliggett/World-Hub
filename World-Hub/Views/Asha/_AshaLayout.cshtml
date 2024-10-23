@@ -4,39 +4,22 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="~/css/CssReset.css" asp-append-version="true" />
-     <link rel="stylesheet" href="~/css/PageSetup.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/PageSetup.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/Asha.css" asp-append-version="true" />
 </head>
 <body>
-    <header class="navbar">
-        <nav>
-            <div>
-                
-                <ul>
-                    <li class="homepage">
-                        <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                    </li>
-                    <li>
-                        <a asp-area="" asp-controller="Asha" asp-action="Index">Overview</a>
-                    </li>
-                    <li>
-                        <a asp-area="" asp-controller="Asha" asp-action="Rules">Rules</a>
-                    </li>
-                    <li>
-                        <a asp-area="" asp-controller="Asha" asp-action="Deities">Deities</a>
-                    </li>
-                    <li>
-                        <a asp-area="" asp-controller="Asha" asp-action="Chargen">Character Options</a>
-                    </li>
-                    <li>
-                        <a asp-area="" asp-controller="Asha" asp-action="Guide">Player Guide</a>
-                    </li>
-                    @* <li>
-                         <a asp-area="" asp-controller="Asha" asp-action="Groups">Groups</a>
-                    </li> *@
-                </ul>
-            </div>
+    <header>
+        <nav class="wideNav" id="navbar">
+            <a id="homepage" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            <a class="navItem" asp-area="" asp-controller="Asha" asp-action="Index">World Info</a>
+            <a class="navItem" asp-area="" asp-controller="Asha" asp-action="Chargen">Character Options</a>
+            <a class="navItem" asp-area="" asp-controller="Asha" asp-action="Rules">Rules</a>
+            <a class="navItem" asp-area="" asp-controller="Asha" asp-action="Guide">Player Guide</a>
+            <a href="javascript:void(0);" class="icon" onclick="collapseNavbar()">
+                <i class="fa fa-bars"></i>
+            </a>
         </nav>
     </header>
     <div class="pageLayout">
@@ -50,8 +33,7 @@
             &copy; 2024 - Jan Liggett - <a asp-area="" asp-controller="Home" asp-action="About">About</a>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @* <script src="~/lib/jquery/dist/jquery.min.js"></script> *@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

@@ -9,15 +9,16 @@
     --charcoal-opaque: rgb(59, 67, 86, 0.7);
 }
 
-.navbar {
+.wideNav {
+    overflow: hidden;
     background-color: var(--purple);
 }
 
-.navbar a {
+.wideNav a {
     color: var(--almostWhite);
 }
 
-.navbar a:hover {
+.wideNav a:hover {
     background-color: var(--blue);
     color: var(--pink);
 }

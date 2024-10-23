@@ -25,32 +25,33 @@ body {
     
 }
 
-
-
-
 /* Navbar */
-.navbar ul {
+.wideNav {
     overflow: hidden;
     background-color: var(--rose);
     border-bottom-color: var(--bloodRose);
     box-shadow: 2px 2px 4px black;
 }
 
-.navbar li {
+.wideNav a {
     display: inline-block;
     background-color: var(--rose);
 }
 
-.navbar a {
+.wideNav a {
     display: block;
     color: var(--golden);
     padding: 10px 10px;
     text-decoration: none;
 }
 
-.navbar a:hover {
+.wideNav a:hover {
     text-decoration: none;
     background-color: var(--bloodRose);
+}
+
+.wideNav .icon {
+    display: none;
 }
 
 /* General Layout */
@@ -136,10 +137,11 @@ table li {
 
 /* Viewing Cards */
 .deck {
-    display: flex;
+    /*text-align: center;*/
 }
 
 .card {
+    display: inline-block;
     background-color: var(--rose);
     text-decoration: none;
     color: var(--golden);
@@ -152,14 +154,38 @@ table li {
     border: 5px solid var(--bloodRose);
     border-radius: 14px;
     font-size: 1.3em;
+    margin-bottom: 10px;
 }
 
 
 @media screen and (max-width: 660px) {
-    #navbar ul {
-        background-color: blue;
-    }
     .pageLayout {
         width: 95%;
+        box-shadow: none;
+    }
+
+    /*Navbar */
+    .wideNav a:not(:first-child) {
+        display: none;
+    }
+
+    .wideNav a.icon {
+        float: right;
+        display: block;
+    }
+    .wideNav.narrowNav {
+        position: relative;
+    }
+
+    .wideNav.narrowNav .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .wideNav.narrowNav a {
+        float: none;
+        display: block;
+        text-align: left;
     }
 }

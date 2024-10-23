@@ -36,30 +36,26 @@ p {
 
 /* Navbar */
 
-.navbar ul {
-    list-style-type: none;
+.wideNav {
     padding-left: 0;
     border-bottom: 6px solid black;
 }
 
-.navbar li {
+.wideNav a {
+    float: left;
+    /*display: block;*/
     display: inline-block;
-}
-
-.navbar a {
-    display: block;
     padding: 10px 10px;
     text-decoration: none;
 }
 
-.navbar a:hover {
+.wideNav a:hover {
     text-decoration: none;
 }
 
-.homepage {
+#homepage {
     margin-right: 30px;
     display: block;
-
 }
 
 /* Footer */

@@ -10,20 +10,10 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div>
-                <ul>
-                    <li class="homepage">
-                        <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                    </li>
-                    <li class="center">
-                        <a asp-area="" asp-controller="Home" asp-action="Index">Worlds</a>
-                    </li>
-                    <li class="center">
-                        <a asp-area="" asp-controller="Home" asp-action="About">About</a>
-                    </li>
-                </ul>
-            </div>
+        <nav class="wideNav" id="navbar">
+            <a class="homepage" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            @* <a asp-area="" asp-controller="Home" asp-action="Index">Worlds</a> *@
+            <a asp-area="" asp-controller="Home" asp-action="About">About</a>
         </nav>
     </header>
     <div class="pageLayout">
@@ -36,8 +26,7 @@
             &copy; 2024 - Jan Liggett - <a asp-area="" asp-controller="Home" asp-action="About">About</a>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @* <script src="~/lib/jquery/dist/jquery.min.js"></script> *@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

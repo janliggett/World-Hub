@@ -16,3 +16,12 @@ function Duplicate() {
 
     document.body.insertBefore(test, worlds);  
 }
+
+function collapseNavbar() {
+    var x = document.getElementById("navbar");
+    if (x.className === "wideNav") {
+        x.className += " narrowNav";
+    } else {
+        x.className = "wideNav";
+    }
+}
