@@ -1,17 +1,24 @@
 ﻿@{
-    ViewData["Title"] = "The CEU";
+    ViewData["Title"] = "Player Guide";
     Layout = "_AshaLayout.cshtml";
 }
+
+<h1>The Missing Artifact</h1>
+<p>You were in The CEU when a member of <a href="~/WorldInfo/Asha/Groups#wayfarers">The Wayfarers</a> recruited you to join a task force. Its goal is to recover a dangerous artifact, which had apparently been stolen. While your point of contact didn't know much, they did know a name: it had been stolen by a man named Thalantyr Lethos.</p>
+
+<p>Beyond that, they didn't know too much. Thalantyr's location was unknown, so traveling and collecting information would be part of the job. They would also mention that yours isn't the only task force that will be hunting this artifact, which means you've got some competition.</p>
+
+<p>In addition to a reward of 50 platinum per person once the artifact is returned, this task force consists of other adventurers who you will be introduced to during a debriefing. And as the date grows near, you would learn that you'll be meeting them on the 15th of Spiritas, in a private room at The Wayfarers office in Esalona.</p>
 
 <h1>Character Creation</h1>
 <p>While creating a character, you'll basically need to do the following:</p>
 <ul>
     <li>If you haven&rsquo;t already, get an invite from me to join the campaign on forge.</li>
-    <li>Keep the setting in mind and try to create a character that fits. <a asp-area="" asp-controller="Asha" asp-action="Chargen">The available options have been summarized here</a>, while the rest of the website attempts to provide common information your characters may know.</li>
+    <li>While creating a character, <a asp-area="" asp-controller="Asha" asp-action="Chargen">go over the available options here</a>. The rest of the website attempts to provide common information your characters may know.</li>
     <li>Tell me about your character. We'll want to discuss the character so that I can offer suggestions or at least mark stuff down about them in my notes.</li>
     <li><a asp-area="" asp-controller="Asha" asp-action="Rules">Read over the rules listed here.</a> I'm mostly playing PF2e by the book, but anything I felt was worth mentioning is there.</li>
 </ul>
-<p>While I&rsquo;ve tried to make as much available in the documentation as I can, naturally there is stuff that isn&rsquo;t included. It&rsquo;s impossible to include everything a player will need to know, because your character&rsquo;s background could make them privy to secret information, you might want to design your home village, or any other number of things.</p>
+<p>While I've tried to make as much available in the documentation as I can, naturally there is stuff that isn&rsquo;t included. It's impossible to include everything a player will need to know, because your character&rsquo;s background could make them privy to secret information, you might want to design your home village, or any other number of things.</p>
 <p>So if you have any questions, don&rsquo;t hesitate to ask!</p>
 
 <h2>Starting Equipment</h2>
@@ -26,11 +33,9 @@
 </ul>
 
 <h1>Using Foundry</h1>
-<p>
-    Since at least some of my players aren&rsquo;t going to be very
-    familiar with Foundry as a VTT, I wanted to dedicate part of this guide
-    to using it.
-</p>
+<p>Since at least some of my players aren&rsquo;t going to be very familiar with Foundry as a VTT, I wanted to dedicate part of this guide to using it.</p>
+<p>The biggest difference between Foundry and other VTT's I'm aware of is that it can be customized using modules, which are basically mods that change how Foundry works. This can make it highly customizeable both from a GM and player perspective, but may also make it a bit more complicated to use. So a good portion of this section will be talking about different modules I've installed.</p>
+<p>Modules can largely be customized by selecting <b>Configurate Settings</b> and selecting the specific module on the left.</p>
 
 <h2>Performance & Accessibility</h2>
 <p>First of all, if you notice any performance issues, please keep in mind that you can adjust settings individually through the settings tab on the far right. Under Configure Settings you&rsquo;ll find &ldquo;Performance Mode,&rdquo; along with accessibility settings and other things you might want to tweak.</p>
@@ -41,6 +46,25 @@
 <p>Just to the left of the settings tab, you&rsquo;re going to find compendiums. Basically anything you need to create a character should be in a compendium, which means you&rsquo;ll just need to drag and drop most of what you need from a compendium onto your character sheet. I&rsquo;d largely prefer to add stuff via compendiums, simply because it&rsquo;s easier and ensures stuff plays nicely.</p>
 <p>When looking at things like feats specifically, I'd recommend checking out the Compendium Browser at the bottom. Pathfinder 2e seems to have a lot of feats and the compendium browser makes it easier to filter out stuff you don&rsquo;t want to see.</p>
 <img src="~/Images/Snippets/compendiumBrowser.png" />
+<br />
 
-<p>As a final note, I&rsquo;d like to bring your attention to the &ldquo;PF2E Workbench&rdquo; folder in the Compendiums tab under the macros folder. PF2E Workbench is a module that adds scripts and while a lot of these aren&rsquo;t going to be relevant to players, I do think the &ldquo;Basic Action Macros&rdquo; script is worth giving a look. Running this script will bring up a list of common actions, which might prove more intuitive than using the character sheet.</p>
+<h2>PF2e Workbench: Basic Action Macros</h2>
+<p>Something I'd like to attention to the &ldquo;PF2E Workbench&rdquo; folder in the Compendiums tab under the macros folder. PF2E Workbench is a module that adds scripts and while a lot of these aren&rsquo;t going to be relevant to players, I do think the &ldquo;Basic Action Macros&rdquo; script is worth giving a look. Running this script will bring up a list of common actions, which might prove more intuitive than using the character sheet.</p>
 <img src="~/Images/Snippets/basicActionMacro.png" />
+<br />
+
+<h2 id="pf2eHUD">PF2e HUD</h2>
+<img src="~/Images/Snippets/PF2e HUD Explosion.png">
+<p>When clicking on your token, you'll notice a strange menu popping up around your token. This is from a module called "PF2e HUD," which you may find more convenient to use than the character sheet for quickly viewing certain information.</p>
+<p>With that said, this can be customized in certain ways or even disabled if you decide you don't like it. To do so, all you need to do is go to "Configure Settings," select "PF2e HUD," and then scroll down to "Token HUD."</p>
+<h3>Persistent HUD</h3>
+<p>One option for PF2e HUD that I want to bring attention to is <b>Persistent HUD</b>. I disabled this by default since it adds a persistent UI that I suspect not everyone is going to like, but having played around with it, I think I actually prefer it over the popup token HUD.</p>
+<p>I think it does really boil down to preference, though. So just be aware it's an option!</p>
+<img src="~/Images/Snippets/PF2e HUD Persistent.jpg" />
+<br />
+
+<h2>PF2e Dorako UI</h2>
+<p>Dorako UI and Dorako UX can be used to change the overall appearance of the UI, so feel free to play around with it. If any settings are greyed out, it's simply because I wanted to make sure they were the default; you can unlock them by clicking the lock icon next to the option.</p>
+
+<h2>Tokenizer: Quickly Make Tokens</h2>
+<p>When you click on your character's portrait on your character sheet, it should open up a menu that's been added by the Tokenizer module. <a href="https://github.com/MrPrimate/tokenizer">An indepth guide to using Tokenizer can be found here</a>, but suffice to say, it should make it easy to quickly create and customize tokens for your character. I'm certainly using it at least to create tokens for NPC's.</p>

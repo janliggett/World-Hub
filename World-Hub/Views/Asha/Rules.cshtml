@@ -1,35 +1,39 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
     ViewData["Title"] = "Rules";
     Layout = "_AshaLayout.cshtml";
 }
 
 <h1>The Hexmap</h1>
+<p><b>Note: </b>This is a WIP while I convert this from D&D 5e to PF2e and overall just make it more in line with what the GM Core recommends.</p>
 <p>For this campaign, I'm making use of hex maps for exploration. Instead of trying to keep track of everything in miles, I'm instead rewriting things so that travel is represented in hexes per day.</p>
 <p>While traveling, you'll want to keep the following in mind:</p>
 <ul>
-    <li>Miles have been replaced by Movement Points (MP).
+    <li>Miles have been replaced by Movement Points (MP)
         <ul>
-            <li>Most adventurers recover 4 movement points after 8 hours of sleep. They can also recover MP by taking a point of fatigue.</li>
-            <li>An adventurer has Max Movement Points, which for most adventurers is 6.</li>
+            <li>Most adventurers recover 4 MP after 8 hours of sleep.</li>
+            <li>An adventurer has a Max MP, which for most adventurers is 6.</li>
         </ul>
-    </li>    
-    <li>Some hexes take longer to traverse, and may come with special considerations.</li>
-    <li class="c1 c6 li-bullet-0">Mounts, landscape features, and other things affect movement.</li>
+    </li>
+    <li class="c1 c6 li-bullet-0">Environment, mounts, landscape features, and other things affect movement.</li>
 </ul>
 <p><a asp-controller="Asha" asp-action="TravelRules">For further details on travel, please click here for a full explanation of travel rules and how this stuff is being calculated.</a></p>
 
+<h2>Exploration Activities</h2>
+<p>One thing worth bringing attention to is Exploration Activies. The most common exploration activities <a href="https://2e.aonprd.com/Rules.aspx?ID=2442">can be found here</a>, while an expanded list of activities <a href="https://2e.aonprd.com/Activities.aspx?Category=1">can be found here</a>.</p>
+
+<h1>Rules of Note</h1>
+<p>If there's a PF2e rule I'm aware of that players coming in from 5e may be confused by, I wanted to elaborate on it here.</p>
+@* <h2>Lore - Recall Knowledge</h2>
+<p>While Recall Knowledge has its uses for recalling general information, it is also a highly important skill for any would be monster hunter. This is because this skill is also used for Creature Identification</p>
+<p>While fighting monsters, an adventurer can use Lore - Recall Knowledge to recall information about the enemy. A successful roll may reveal important information about said enemy, such as their weaknesses.</p> *@
+<h2>Surprise Rounds</h2>
+<p>In PF2e, surprise rounds aren't really mentioned in the rules. There is no "surprised" condition either, but that doesn't make being caught off guard any less dangerous.</p>
+<p>If a person is caught off guard, then it is generally assumed that they didn't have their weapons at the ready. So in addition to possibly getting hit by an attack before initiative starts, they will also have to spend an action drawing their weapon. Depending on where and when the attack occurs, they might also have not had their armor equipped, which would incur a penatly to AC.</p>
 
 <h1>Rule Clarifications</h1>
 <p>While I'm largely playing Pathfinder 2e by the book, there are a few things I've either changed or felt were worth mentioning. Any changes to player options <a asp-area="" asp-controller="Asha" asp-action="Chargen">are listed on the character creation page</a>.</p>
 <h2>Encumbrance</h2>
-<p class="c1">Because it'&rsquo;'s really easy to track encumbrance in Foundry so long as items are added via compendiums, I'd like to make use of encumbrance rules. So you'll want to either sell unused equipment or find somewhere to store it.</p>
+<p class="c1">Because it's really easy to track encumbrance in Foundry so long as items are added via compendiums, I'd like to make use of encumbrance rules. So you'll want to either sell unused equipment or find somewhere to store it.</p>
 <h2>Rations</h2>
 <p class="c1">I'd like to keep track of rations, since I think needing to keep track of food makes travel more interesting.</p>
 <p>While I know a lot of people don't like needing to keep track of rations, I should have a script that allows me to make everyone in the party consume a ration with the click of a button. My hope is that this will make rations into a fun mechanic that doesn't require micro management on the player's end.</p>
-<h2>Less common Common</h2>
-<p>If you&rsquo;ve read about languages, you might have noticed I&rsquo;ve changed Common into a &ldquo;language a lot of people know&rdquo; instead of a language everyone knows.</p>
-<p>My reasoning here is that when it comes to NPC&rsquo;s, I want language to act as a barrier to information if a character is far from home. When it comes to the party though, I want to give the PC&rsquo;s a way to understand each other without needing to change what languages they select. This is why Common has become a bit less common.</p>
-

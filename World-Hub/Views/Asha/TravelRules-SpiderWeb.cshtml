@@ -10,7 +10,7 @@
 <h1>Rules of Hex Travel</h1>
 <p>While I don't expect players to commit any of this to memory, I wanted to provide an explanation of how hex travel is being decided. My goal is to create rules that are fun, easy to track, and challenging without being frustrating, so please let me know if you find anything you don't like! Naturally we can change any rules that end up not being as fun in practice as they look on paper as well.</p>
 
-<p>Using <a href="https://2e.aonprd.com/Rules.aspx?ID=2441&Redirected=1">Pathfinder 2e's travel rules</a> and <a href="https://2e.aonprd.com/Rules.aspx?ID=3103">what they have to say about hexploration</a> as guidance, I've converted any mention of miles into hex form. Each hex roughly represents 6 miles, though overall the map is designed under the assumption that your average adventurer can travel 4 hexes in a day across <a href="#normalTerrain">normal terrain</a>.</p>
+<p>Using <a href="https://2e.aonprd.com/Rules.aspx?ID=2441&Redirected=1">Pathfinder 2e's travel rules</a> and what they have to say about <a href="https://2e.aonprd.com/Rules.aspx?ID=3103">hexploration</a> as guidance, I've converted any mention of miles into hex form. Each hex roughly represents 6 miles, though overall the map is designed under the assumption that your average adventurer can travel 4 hexes in a day across <a href="#normalTerrain">normal terrain</a>.</p>
 
 <p>To avoid having to do a bunch of math every time the party moves, I'm giving adventurers movement points (MP) to use which are based on their speed:</p>
 <ul>
@@ -20,43 +20,40 @@
             <li>Speed always rounds to the nearest 10, so a speed of 25 equals 4 MPR.</li>
         </ul>
     </li>
-    <li>The average adventurer has 6 Max MP (MMP). This is meant to account for travel that doesn't cleanly break down into 6 mile increments by giving leftover MP a use.
+    <li>The average adventurer has 6 Max MP (MMP), which is meant to give leftover MP a use.
         <ul>
-            <li>MMP = MPR + 2. 2 seems to be just the right amount of wiggle room.</li>
+            <li>MMP = MPR / 2 + MPR.</li>
         </ul>
     </li>
-    <li>If an adventurer has 0.5 MP, this would round to 1 for the sake of travel.</li>
+    <li>Some actions may provide Temporary MP. Temporary MP bypasses MMP, making it possible to temporarily have 7 MP with 6 MMP.</li>
+    <li>It may be possible to end up with 0.5 MP. This would round and be added to MPR for the next adventuring day.</li>
 </ul>
+<p><b>Travel Pace: </b>At the beginning of an adventuring day, players can choose to travel at a <b>fast pace</b> to for +1 Temporary MP at the cost of taking disadvantage on perception, survival, and stealth checks. Players can also travel at a <b>slow pace</b> at the cost of losing 1 MP, but this will provide advantage on perception, survival, and stealth checks.</p>
 
-<p><b>Vision: </b>While traveling, an adventurer has vision of bordering hexes. It might be possible to extend their vision, .</p>
+<p><b>Vision: </b>While traveling, an adventurer has vision of bordering hexes. If they can find high ground, such as by climbing a tall tree, they can extend their vision by a further 1 hex.</p>
 
 @* Terrain difficulty.  *@
 <h1>Hex Difficulty</h1>
 <p>Within the hex map, each hex represents a biome. While different biomes come with their own considerations, a notable thing affected by this is how challenging it is to travel across a hex. This determines how much MP it costs to move onto a the hex, so it may be better to avoid certain hexes if your goal is to move quickly.</p>
-<p>Note that <b>cost is for moving onto a hex</b>. This means it costs 3 MP to move from a grassland hex onto a mountain hex and 1 MP to move from a mountain hex onto a grassland hex.</p>
+<p>Please note that <b>cost is for moving onto a hex</b>. This means it costs 4 MP to move from a grassland hex onto a mountain hex and 1 MP to move from a mountain hex onto a grassland hex.</p>
 
 
 <h2 id="normalTerrain">Normal Hex</h2>
-<p>It costs 1 point to enter the hex. Grasslands are a common example of this type of terrain.</p>
+<p>It costs 1 point to enter the hex. Grasslands, less dense forests, and flat tundras are an example of this type of terrain.</p>
 
 <h2>Challenging Hex</h2>
-<p>It costs 2 points to enter the hex. Hills, swamps, forests, and jungles are but a few examples of a challenging hex. It's generally assumed that an adventurer tires more easily and must take more regular breaks.</p>
+<p>It costs 2 points to enter the hex. Hills, swamps, and dense jungles are but a few examples of a challenging hex. It's generally assumed that an adventurer tires more easily and must take more regular breaks.</p>
 
 <h2>Mountain Hex</h2>
 <p>It costs 3 points to enter the hex. Mountains have some special considerations:</p>
     <ul>
-        <li>In order to progress without issue, an adventurer must succeed on 6 athetics checks, which are made using the Climb action. These checks are normally made at DC15 to represent that some training is needed, but DC may vary.</li>
-        <li>Success on these rolls determines progress into the hex, which is calculated before entering the hex:
+        <li>An adventurer must succeed on a climbing check to pass through unharmed, which is usually DC15. They might be able to skip this check using spells or other means.
             <ul>
-                <li><b>Critical Success</b>: The adventurer makes progress and can give a +2 circumstance bonus to any allies.</li>
-                <li><b>Success</b>: The adventurer makes progress.</li>
-                <li><b>Failure</b>: The adventurer loses 1 MP. For a party, MP loss does not stack; if three adventurers fail, then the party only loses 1 MP.</li>
-                <li><b>Critical Failure</b>: The adventurer loses 1 MP and takes fall damage.</li>
+                <li>If moving at a fast pace, add 5 to the DC.</li>
+                <li>If moving at a slow pace, subtract 5 from the DC.</li>
             </ul>
         </li>
-    <li><b>Climbing kit</b>: Since <a href="https://2e.aonprd.com/Equipment.aspx?ID=2713">climbing kits</a> normally affect ascension speed, rather than overall movement speed, I'm going to say they don't affect MP. They take up inventory space anyway, so there's already reason to reconsider carrying one.</li>
     </ul>
-<p>It may also be worth keeping the <a href="https://2e.aonprd.com/Rules.aspx?ID=2596">Follow the Expert exploration activity</a> in mind.</p>
 <br>
 
 @* Landscapre features *@
@@ -64,12 +61,12 @@
 <p>In addition to terrain difficulty, certain hexes may contain landscape features. These may change the hex difficulty, act as a barrier, or come with other special considerations.</p>
 
 <h2>Paths</h2>
-<p>In addition to possibly downgrading a hex's difficulty, an adventurer normally can't get lost if following a path.</p>
+<p>If there is a path leading through a challenging or mountain hex, then this hex gets downgraded in difficulty. How much it gets downgraded varies. On normal terrain, paths just indicate roads commonly traveled.</p>
 
 <h2>Rapid Flowing Rivers</h2>
-<p>Trying to cross a rapid flowing river can prove deadly to an unprepared adventurer. They can swim across by succeeding an athletics check (normally DC15), but might be able to get across with an easier skill check if they have the means to do so. If they are wearing heavy armor, they take a -10 circumstance penalty.</p>
+<p>Trying to cross a rapid flowing river can prove deadly to an unprepared adventurer. They can swim across by succeeding an athletics check (normally DC15), but might be able to get across with an easier skill check if they have the means to do so. If they are wearing heavy armor, they take disadvantage on the roll to swim.</p>
 @* <p>Although river rapids by themselves are unlikely to kill an unprepared adventurer, they can still prove to be a hazard. </p> *@
-<p><b>Failing the check: </b>If they fail the DC15 athletics check, they will take 1d4 damage and be washed a hex down river. They must make the check again and succeed in order to escape the rapids.</p>
+<p><b>Failing the check: </b>If they fail the DC15 athletics check, they will take 1d4 damage, a point of exhaustion, and are washed a hex down river. They must make the check again and succeed in order to escape the rapids.</p>
 
 <h2>Cliffs and other great heights</h2>
 <p>Sometimes an adventurer may find their path blocked by great height. I'm planning to use whatever rules the system I'm using uses, so I'll link to those for ease of access.</p>
@@ -83,22 +80,21 @@
 <br>
 
 <h2>Other Features</h2>
-<p>This section is only meant to cover common landscape features that your average adventurer would be familiar with, so there are bound to be landscape features not covered here. If it's not listed here and you're unsure what a landscape feature does, I'll probably have you roll to see if you understand how it works.</p>
+<p>This section is only meant to cover common landscape features that your average adventurer would be familiar with., so there are bound to be landscape features not covered here. If it's not listed here and you're unsure what a landscape feature does, I'll probably have you roll to see if you understand how it works.</p>
 
 <h1>Getting Lost</h1>
-<p>When venturing off well-trodden paths, it's inevitable that an adventurer will eventually get lost and have to find their way. When this happens, the GM will hide the map, describe their surroundings, and decide where they end up based on the information provided.</p>
-<p>Whether an adventurer gets lost or not is usually determined by a survival check rolled at the beginning of an adventuring day, but for hexes like a forest, it may be necessary to roll survival for every hex. Because only one person makes the check, adventuring parties will often designate someone to act as a guide; however, another adventurer can still attempt to assist their guide by using <a href="https://2e.aonprd.com/Actions.aspx?ID=2292&Redirected=1">the aid action</a>.</p>
+<p>When venturing off well-trodden paths, it's inevitable that an adventurer will eventually get lost and have to find their way. When this happens, the GM will hide the map, describe their surroundings, and decide where they end up given the information provided.</p>
+<p>Whether an adventurer gets lost or not is usually determined by a survival check rolled at the beginning of an adventuring day, but for hexes like dense forest, the GM may have you roll for every hex. The difficulty of this check depends on the hex the day is starting on. Because only one person makes the check, adventuring parties will often designate someone to act as a guide; however, another adventurer can still attempt to assist their guide by using <a href="https://2e.aonprd.com/Actions.aspx?ID=2292&Redirected=1">the aid action</a>.</p>
 <h2>Getting Unlost</h2>
 <p>While getting lost can prove to be a nuisance, there are thankfully plenty of ways for an adventurer to find their bearings.</p>
-<p>Adventurers can use the <b>Sense Direction</b> <a href="https://2e.aonprd.com/Actions.aspx?ID=2406">Exploration Activity</a></p>
-<p>If the lost adventurer can find a good vantage point, they might be able to make another survival check to get their course back on track.</p>
+<p>If the lost adventurer can <b>find a good vantage point on some high ground</b>, they might be able to make another survival check to get their course back on track.</p>
 <p>Alternatively, if a lost adventurer were to <b>find a landmark</b>, they might be able to roll nature or lore to figure out where they are. If it's in a location the adventurer is familiar with or if the landmark is famous, <a href="https://2e.aonprd.com/Rules.aspx?ID=508"> the adventurer will receive a circumstance bonus</a>  determined by the GM.</p>
 
 @* Vehicles and mounts *@
 <h1>Vehicles & Mounts</h1>
-<p>Unless otherwise stated, a vehicle will replace an adventurer's normal MP instead of adding or subtracting from it. MP is determined by Speed / 10 + 1, but if a vehicle's speed isn't divisible by 10, its speed is rounded to the nearest 10.</p>
+<p>Unless otherwise stated, a vehicle will replace an adventurer's normal MP instead of adding or subtracting from it. MP is determined by Speed / 10 + 1. If a vehicle's speed isn't divisible by 10, round speed to the nearest 10. Max MP is MP / 2 + MP.</p>
 
-<h2>Mounting & Dismounting</h2>
+<h2>Mountaing & Dismounting</h2>
 <p>For the sake of mounting and dismounting, a bit of math unfortunately seems unavoidable.</p>
 <p>Overall, this is calculated by dividing the entity with the lower MP Recovery (MPR) by the entity with the higher MPR and then multiplying the resulting decimal by  to determine how much MP is reasonably remaining. For example, an adventurer who rides three hexes across flat terrain on a horse and then dismounts can move another 2 hexes on foot.</p>
 <p><b>Math formula: </b> Lower_MPR / Higher_MPR * Hexes_Moved</p>
@@ -119,7 +115,7 @@
         <tr>
             <td>Riding Horse</td>
             <td>6</td>
-            <td>8</td>
+            <td>9</td>
             <td>
                 <ul>
                     <li>Horses struggle with exiting mountains, swamps, and some other hexes.
@@ -162,7 +158,7 @@
         <tr>
             <td>Sailing Ship</td>
             <td>5</td>
-            <td>7</td>
+            <td>8</td>
             <td>
                 <ul>
                     <li>
